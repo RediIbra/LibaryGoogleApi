@@ -21,7 +21,7 @@ const BookList = () => {
 
       try {
         const response = await axios.get(
-          `https://www.googleapis.com/books/v1/volumes?q=${searchQuery}&key=AIzaSyA21aEdqY6dcdMCS-mCa9KCYcPakIKH7WM`
+          `https://www.googleapis.com/books/v1/volumes?q=${searchQuery}&key={YOUR API KEY}`
         );
         setBooks(response.data.items || []);
       } catch (error) {
